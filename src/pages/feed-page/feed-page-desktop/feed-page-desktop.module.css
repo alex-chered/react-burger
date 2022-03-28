@@ -1,0 +1,30 @@
+
+/* FEED PAGE */
+
+.feed-page {
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  padding: 0 20px;
+}
+
+
+/* FEED PAGE -> HEADER */
+
+.feed-page__header {
+  margin-top: 40px;
+}
+
+
+/* FEED PAGE -> CONTENT */
+
+.feed-page__content {
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: 20px;
+}

@@ -1,0 +1,17 @@
+
+/* HOME PAGE -> FOOTER */
+
+.home-page__footer {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* HOME PAGE -> SHOW ORDER */
+
+.home-page__show-order {
+  width: 185px;
+  margin-left: 16px;
+}

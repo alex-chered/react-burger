@@ -1,0 +1,25 @@
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.icon--large {
+  width: 34px;
+  height: 34px;
+}
+
+.icon--primary {
+  fill: var(--text-main-color);
+}
+
+.icon--secondary {
+  fill: var(--text-inactive-color);
+}
+
+.icon--error {
+  fill: var(--colors-interface-error);
+}
+
+.icon--success {
+  fill: var(--colors-interface-success);
+}

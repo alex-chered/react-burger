@@ -1,0 +1,49 @@
+section-/* FEED PAGE -> DASHBOARD  */
+
+.feed-page__section-dashboard {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .feed-page__section-dashboard {
+    width: 534px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .feed-page__section-dashboard {
+    width: 584px;
+  }
+}
+
+
+/* FEED PAGE -> DASHBOARD ORDERS  */
+
+.feed-page__dashboard-orders {
+  display: flex;
+  gap: 24px;
+
+  width: 100%;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .feed-page__dashboard-orders {
+    margin-top: 20px;
+  }
+}
+
+.feed-page__dashboard-orders-group {
+  width: calc((100% - 24px) / 2);
+}
+
+
+/* FEED PAGE -> DASHBOARD TOTAL  */
+
+.feed-page__dashboard-total {
+  margin-top: 24px;
+}
+
+@media only screen and (min-width: 1400px) {
+  .feed-page__dashboard-total {
+    margin-top: 60px;
+  }
+}

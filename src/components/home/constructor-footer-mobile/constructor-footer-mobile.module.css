@@ -1,0 +1,18 @@
+
+/* CONSTRUCTOR FOOTER */
+
+.constructor-footer {
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+/* CONSTRUCTOR FOOTER -> CREATE ORDER */
+
+.constructor-footer__create-order {
+  width: 185px;
+  margin-left: 16px;
+}

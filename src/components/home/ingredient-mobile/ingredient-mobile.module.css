@@ -1,0 +1,60 @@
+
+/* INGREDIENT */
+
+.ingredient {
+  width: 144px;
+  height: 220px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  cursor: pointer;
+
+  position: relative;
+}
+
+
+/* INGREDIENT -> CONTENT */
+
+.ingredient__content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* INGREDIENT -> IMAGE */
+
+.ingredient__image {
+  width: 144px;
+  height: 72px;
+}
+
+
+/* INGREDIENT -> PRICE */
+
+.ingredient__price {
+  margin-top: 8px;
+}
+
+
+/* INGREDIENT -> DESCRIPTION */
+
+.ingredient__description {
+  margin-top: 8px;
+  text-align: center;
+  height: 60px;
+}
+
+
+/* INGREDIENT -> BTN ADD */
+
+.ingredient__btn-add {
+  margin-top: 8px;
+  padding: 10px 4px;
+
+  color: var(--colors-interface-accent);
+}

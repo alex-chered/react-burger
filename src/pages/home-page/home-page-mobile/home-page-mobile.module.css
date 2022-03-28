@@ -1,0 +1,105 @@
+
+/* HOME PAGE */
+
+.home-page {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  /* display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: 
+    "container"
+    "footer";
+  justify-items: center; */
+}
+
+@media screen and (min-width: 1200px) {
+  .home-page {
+    display: none;
+  }
+}
+
+
+/* HOME PAGE -> SECTION INGREDIENTS */
+
+.home-page__section-ingredients {
+  position: relative;
+
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas: 
+    "header"
+    "menu"
+    "ingredients";
+  justify-items: center;
+}
+
+
+/* HOME PAGE -> HEADER */
+
+.home-page__header {
+  grid-area: header;
+
+  margin-top: 16px;
+}
+
+
+/* HOME PAGE -> MENU */
+
+.home-page__menu {
+  width: 100%;
+
+  grid-area: menu;
+
+  margin-top: 8px;
+}
+
+
+/* HOME PAGE -> INGREDIENTS */
+
+.home-page__ingredients {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  grid-area: ingredients;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  margin-top: 20px;
+  padding: 0 8px;
+
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+@media screen and (min-width: 576px) {
+  .home-page__ingredients {
+    padding: 0;
+  }
+}
+
+.home-page__ingredients::-webkit-scrollbar {
+  width: 0;
+}
+
+
+/* HOME PAGE -> FOOTER */
+
+.home-page__footer {
+  width: 100%;
+
+  background-color: var(--background);
+  padding: 16px 8px;
+}

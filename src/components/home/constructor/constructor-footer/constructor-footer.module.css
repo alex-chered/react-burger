@@ -1,0 +1,25 @@
+
+/* CONSTRUCTOR -> FOOTER */
+
+.constructor__footer {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 40px;
+}
+
+
+/* CONSTRUCTOR -> FOOTER PRICE */
+
+.constructor__footer-price {
+  margin-right: 40px;
+}
+
+
+/* CONSTRUCTOR -> FOOTER ACTION */
+
+.constructor__footer-action {
+  margin-right: 16px;
+}

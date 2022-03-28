@@ -1,0 +1,85 @@
+
+/* CONSTRUCTOR -> COMPONENT */
+
+.constructor__component {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  grid-template-areas: "drag ingredient";
+  align-items: center;
+
+  background-color: var(--background-alt);
+
+  padding: 0 8px;
+}
+
+
+/* CONSTRUCTOR -> COMPONENT DRAG */
+
+.constructor__component-drag {
+  grid-area: drag;
+}
+
+
+/* CONSTRUCTOR -> INGREDIENT */
+
+.constructor__ingredient {
+  width: 100%;
+
+  grid-area: ingredient;
+
+  display: grid;
+  grid-template-columns: 52px 1fr auto;
+  grid-template-areas: "image name price";
+  align-items: center;
+
+  padding: 16px 0;
+}
+
+.constructor__ingredient--border_top {
+  box-shadow: inset 0 -1px 0 var(--background-element);;
+}
+
+.constructor__ingredient--border_bottom {
+  box-shadow: inset 0 1px 0 var(--background-element);;
+}
+
+
+/* CONSTRUCTOR -> INGREDIENT IMAGE WRAPPER */
+
+.constructor__ingredient-image-wrapper {
+  grid-area: image;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 52px;
+  height: 40px;
+
+  overflow: hidden;
+}
+
+
+/* CONSTRUCTOR -> INGREDIENT IMAGE */
+
+.constructor__ingredient-image {
+  width: 80px;
+  height: 40px;
+}
+
+
+/* CONSTRUCTOR -> INGREDIENT NAME */
+
+.constructor__ingredient-name {
+  grid-area: name;
+  padding-right: 8px;
+}
+
+
+/* CONSTRUCTOR -> INGREDIENT PRICE */
+
+.constructor__ingredient-price {
+  grid-area: price;
+}

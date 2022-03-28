@@ -1,0 +1,16 @@
+
+/* ORDER INFO TOTAL */
+
+.order-info-total {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ORDER INFO TOTAL -> DATE */
+
+.order-info-total__date {
+  color: var(--text-inactive-color);
+}

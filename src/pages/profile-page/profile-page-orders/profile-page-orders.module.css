@@ -1,0 +1,10 @@
+
+/* PROFILE PAGE -> ERROR */
+
+.profile-page__error {
+  width: 100%;
+  max-width: 500px;
+
+  margin-top: 50px;
+  text-align: center;
+}

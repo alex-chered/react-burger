@@ -1,0 +1,26 @@
+
+/* SWIPER */
+
+.swiper {
+  position: relative;
+
+  width: 100%;
+  display: flex;
+}
+
+
+/* SWIPER -> ACTIONS */
+
+.swiper__actions {
+  position: absolute;
+
+  display: flex;
+
+  top: 0;
+  bottom: 0;
+  width: 100%;
+
+  background-color: var(--colors-interface-error);
+
+  z-index: -1;
+}

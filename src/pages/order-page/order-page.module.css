@@ -1,0 +1,34 @@
+
+/* ORDER PAGE */
+
+.order-page {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  
+  padding: 0 20px;
+}
+
+
+/* ORDER PAGE -> SECTION ORDER */
+
+.order-page__section-order {
+  width: 100%;
+  max-width: 640px;
+}
+
+
+/* ORDER PAGE -> HEADER */
+
+.order-page__header {
+  margin-top: 120px;
+  text-align: center;
+}
+
+
+/* ORDER PAGE -> ORDER */
+
+.order-page__order {
+  margin-top: 20px;
+}

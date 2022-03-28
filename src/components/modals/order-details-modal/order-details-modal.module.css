@@ -1,0 +1,12 @@
+
+/* MODAL -> ORDER DETAILS */
+
+.modal__order-details {
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__order-details {
+    margin-bottom: 80px;
+  }
+}

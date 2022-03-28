@@ -1,0 +1,41 @@
+
+/* ORDER INFO */
+
+.order-info {
+  width: 100%;
+}
+
+
+/* ORDER INFO -> NUMBER */
+
+.order-info__number {
+  margin-bottom: 24px;
+}
+
+
+/* ORDER INFO -> STATUS */
+
+.order-info__status {
+  margin-top: 8px;
+}
+
+
+/* ORDER INFO -> BOTTOM */
+
+@media screen and (max-width: 575.98px) {
+  .order-info__bottom {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .order-info__bottom {
+    margin-top: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .order-info__bottom {
+    margin-top: 48px;
+  }
+}

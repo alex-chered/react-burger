@@ -1,0 +1,8 @@
+
+/* MODAL -> FOOTER */
+
+.modal__footer {
+  width: 100%;
+
+  grid-area: footer;
+}

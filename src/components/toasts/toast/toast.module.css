@@ -1,0 +1,84 @@
+
+/* TOAST */
+
+.toast {
+  width: 100%;
+  
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: 
+    "icon text close";
+  
+  border-radius: 0.25rem;
+  padding: 8px;
+
+  z-index: 200;
+}
+
+
+/* TOAST -> ICON */
+
+.toast__icon {
+  grid-area: icon;
+  color: inherit;
+  fill: inherit;
+}
+
+
+/* TOAST -> TEXT */
+
+.toast__text {
+  grid-area: text;
+  padding: 0 10px;
+  color: inherit;
+}
+
+
+/* TOAST -> TIMES */
+
+.toast__close {
+  grid-area: close;
+  fill: inherit;
+  cursor: pointer;
+  /* position: absolute;
+  padding: 3px;
+  top: 5px;
+  right: 5px;
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+
+/* TOAST | PRIMARY */
+
+.toast--primary {
+  color: #084298;
+  fill: #084298;
+  background-color: #cfe2ff;
+  border-color: #b6d4fe;
+}
+
+
+/* TOAST | DANGER */
+
+.toast--danger {
+  color: #842029;
+  fill: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+}
+
+
+/* TOAST | SUCCESS */
+
+.toast--success {
+  color: #0f5132;
+  fill: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}

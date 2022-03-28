@@ -1,0 +1,36 @@
+
+/* LINK PANEL */
+
+.link-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.link-panel__element {
+  display: flex;
+}
+
+.link-panel__question {
+  margin-right: 8px;
+  color: var(--text-inactive-color);
+}
+
+.link-panel__link {
+  color: var(--colors-interface-accent);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .link-panel {
+    gap: 20px;
+  }
+  .link-panel__element {
+    flex-direction: column;
+    align-items: center;
+  }
+  .link-panel__question {
+    margin-right: 0;
+  }
+}

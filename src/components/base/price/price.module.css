@@ -1,0 +1,9 @@
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price__number {
+  margin-right: 8px;
+}

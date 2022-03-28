@@ -1,0 +1,7 @@
+
+/* MODAL -> ORDER FOOTER */
+
+.modal__order-total {
+  background-color: var(--background);
+  padding: 8px;
+}

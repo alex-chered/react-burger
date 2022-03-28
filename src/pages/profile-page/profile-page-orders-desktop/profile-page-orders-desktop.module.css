@@ -1,0 +1,31 @@
+
+/* PROFILE PAGE -> SECTION ORDERS */
+
+.profile-page__section-orders {
+  width: 680px;
+  height: 70vh;
+
+  padding: 8px 0 8px 8px;
+
+  align-self: flex-end;
+  margin-top: 36px;
+}
+
+@media screen and (min-width: 1400px) {
+  .profile-page__section-orders {
+    width: 880px;
+    height: 70vh;
+  }
+}
+
+
+/* PROFILE PAGE -> ORDERS CONTENT */
+
+.profile-page__orders-content {
+  height: 100%;
+
+  padding-right: 8px;
+
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}

@@ -1,0 +1,26 @@
+.side-menu {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.side-menu-element {
+  text-decoration: none;
+  padding: 17px 0;
+  color: var(--text-inactive-color);
+}
+
+.side-menu-element__text {
+  color: inherit;
+}
+
+.side-menu-element__action {
+  color: inherit;
+  cursor: pointer;
+}
+
+.side-menu-element--active {
+  color: #f2f2f3;
+}

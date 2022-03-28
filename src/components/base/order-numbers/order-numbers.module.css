@@ -1,0 +1,50 @@
+.order-numbers {
+  width: 100%;
+}
+
+
+/* ORDER NUMBERS -> CONTENT */
+
+.order-numbers__content {
+  margin-top: 24px;
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4px;
+  column-gap: 12px;
+  
+  max-width: 280px;
+  max-height: 136px;
+  
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+.order-numbers__content:active,
+.order-numbers__content:hover,
+.order-numbers__content:focus {
+  /* overflow-y: auto; */
+  overflow-x: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .order-numbers__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .order-numbers__content {
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 8px;
+
+    max-height: 152px;
+  }
+}
+
+
+/*  */
+
+.order-numbers__item--success {
+  color: var(--colors-interface-success);
+}

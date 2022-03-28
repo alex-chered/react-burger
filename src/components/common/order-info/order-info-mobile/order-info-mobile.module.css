@@ -1,0 +1,72 @@
+
+/* ORDER INFO */
+
+.order-info {
+  position: relative;
+
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: auto auto auto auto 1fr;
+  grid-template-areas:
+    "number"
+    "name"
+    "status"
+    "content-header"
+    "content";
+}
+
+
+/* ORDER INFO -> NUMBER */
+
+.order-info__number {
+  grid-area: number;
+}
+
+
+/* ORDER INFO -> NAME */
+
+.order-info__name {
+  grid-area: name;
+  margin-top: 24px;
+}
+
+
+/* ORDER INFO -> STATUS */
+
+.order-info__status {
+  grid-area: status;
+  margin-top: 8px;
+}
+
+
+/* ORDER INFO -> CONTENT HEADER */
+
+.order-info__content-header {
+  grid-area: content-header;
+  margin-top: 24px;
+}
+
+
+/* ORDER INFO -> CONTENT */
+
+.order-info__content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+
+  display: flex;
+
+  grid-area: content;
+  margin-top: 16px;
+
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.order-info__content::-webkit-scrollbar {
+  width: 0;
+}

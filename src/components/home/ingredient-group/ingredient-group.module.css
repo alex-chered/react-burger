@@ -1,0 +1,31 @@
+
+/* INGREDIENT GROUP */
+
+.ingredient-group {
+  width: 100%;
+}
+
+
+/* INGREDIENT GROUP -> CONTENT */
+
+.ingredient-group__content {
+  margin-top: 16px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 32px 16px;
+}
+
+@media screen and (min-width: 576px) {
+  .ingredient-group__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ingredient-group__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 24px;
+  }
+}

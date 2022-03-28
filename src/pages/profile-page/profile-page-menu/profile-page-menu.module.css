@@ -1,0 +1,15 @@
+
+/* PROFILE PAGE -> MENU */
+
+.profile-page__side-menu {
+  position: absolute;
+  width: 320px;
+  left: 20px;
+  top: 120px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .profile-page__side-menu {
+    display: none;
+  }
+}

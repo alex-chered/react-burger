@@ -1,0 +1,29 @@
+
+/* MODAL -> CONTENT */
+
+.modal__content {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  grid-area: content;
+
+  padding: 0 8px;
+}
+
+@media screen and (min-width: 576px) {
+  .modal__content {
+    padding: 0;
+  }
+}
+
+
+/* MODAL -> CONTAINER */
+
+.modal__container {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+}

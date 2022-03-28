@@ -1,0 +1,24 @@
+
+/* MOBILE LAYOUT */
+
+.mobile-layout {
+  width: 100%;
+  height: 100vh;
+  /* height: 100%; */
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-layout {
+    display: none;
+  }
+}
+
+
+/* MOBILE LAYOUT -> CONTAINER */
+
+.mobile-layout__container {
+  height: 100%;
+}

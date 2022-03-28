@@ -1,0 +1,64 @@
+
+/* ORDER INFO */
+
+.order-info {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ORDER INFO -> NAME */
+
+.order-info__name {
+  grid-area: name;
+}
+
+
+/* ORDER INFO -> STATUS */
+
+.order-info__status {
+  grid-area: status;
+  margin-top: 8px;
+}
+
+
+/* ORDER INFO -> CONTENT HADER */
+
+.order-info__content-header {
+  grid-area: content-header;
+  margin-top: 24px;
+}
+
+
+/* ORDER INFO -> CONTENT */
+
+.order-info__content {
+  height: 232px;
+
+  display: flex;
+
+  grid-area: content;
+
+  margin-top: 16px;
+  padding-right: 24px;
+
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+@media screen and (min-width: 1400px) {
+  .order-info__content {
+    height: 316px;
+  }
+}
+
+
+/* ORDER INFO -> TOTAL */
+
+.order-info__total {
+  margin-top: 40px;
+}

@@ -1,0 +1,7 @@
+.order-status--canceled {
+  color: var(--colors-interface-error);
+}
+
+.order-status--done {
+  color: var(--colors-interface-success);
+}

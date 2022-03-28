@@ -1,0 +1,24 @@
+
+/* FEED PAGE -> ORDERS */
+
+.feed-page__section-orders {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .feed-page__section-orders {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+
+    padding-right: 8px;
+
+    height: 70vh;
+    width: 550px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .feed-page__section-orders {
+    width: 600px;
+  }
+}
