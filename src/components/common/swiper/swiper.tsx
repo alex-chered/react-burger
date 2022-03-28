@@ -13,6 +13,7 @@ import styles from './swiper.module.css';
 interface SwiperProps {
   elementRef: RefObject<HTMLDivElement>;
   children: ReactNode;
+  active?: boolean;
   onDelete?: () => void;
 }
 
@@ -21,6 +22,7 @@ export const Swiper = (props: SwiperProps) => {
   const {
     elementRef,
     children,
+    active = true,
     onDelete
   } = props;
 
@@ -224,23 +226,27 @@ export const Swiper = (props: SwiperProps) => {
     };
 
     // add handlers
-    element?.addEventListener('touchstart', touchStartHandler);
-    element?.addEventListener('touchmove', touchMoveHandler);
-    element?.addEventListener('touchend', touchEndHandler);
-    element?.addEventListener('transitionend', elementTransitionEndHandler);
+    if (active) {
+      element?.addEventListener('touchstart', touchStartHandler);
+      element?.addEventListener('touchmove', touchMoveHandler);
+      element?.addEventListener('touchend', touchEndHandler);
+      element?.addEventListener('transitionend', elementTransitionEndHandler);
 
-    deleteElement?.addEventListener('transitionend', deleteActionTransitionEndHandler);
+      deleteElement?.addEventListener('transitionend', deleteActionTransitionEndHandler);
+    }
 
     // remove handlers
     return () => {
-      element?.removeEventListener('touchstart', touchStartHandler);
-      element?.removeEventListener('touchmove', touchMoveHandler);
-      element?.removeEventListener('touchend', touchEndHandler);
-      element?.removeEventListener('transitionend', elementTransitionEndHandler);
+      if (active) {
+        element?.removeEventListener('touchstart', touchStartHandler);
+        element?.removeEventListener('touchmove', touchMoveHandler);
+        element?.removeEventListener('touchend', touchEndHandler);
+        element?.removeEventListener('transitionend', elementTransitionEndHandler);
 
-      deleteElement?.addEventListener('transitionend', deleteActionTransitionEndHandler);
+        deleteElement?.addEventListener('transitionend', deleteActionTransitionEndHandler);
+      }
     };
-  }, [elementRef, onDelete]);
+  }, [elementRef, onDelete, active]);
 
   // RENDER
   return (

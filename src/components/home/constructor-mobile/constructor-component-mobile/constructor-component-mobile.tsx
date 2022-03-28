@@ -74,6 +74,7 @@ export const ConstructorComponentMobile = (props: ConstructorComponentMobileProp
     <Swiper
       elementRef={componentRef}
       onDelete={handleSwiperOnDelete}
+      active={position === 'default'}
     >
 
       {/* COMPONENT */}
